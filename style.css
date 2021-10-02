@@ -1,0 +1,112 @@
+body{
+    margin: 10px;
+}
+.box_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: relative;
+    width: 350px;
+    background-color: white;
+    margin: auto;
+   
+}
+.header{
+    /* background-color: #393B45; */
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px #393B45;
+    letter-spacing: px;
+}
+
+.search_box{
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#search_text{
+    border-radius: 5px;
+    width: 100%;
+}
+#search_btn{
+    border-radius: 5px;
+    margin-left: 5px;
+    
+}
+#search_btn:focus {
+    outline: none  !important; 
+}
+.loading{
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid #cccdd3;
+    border-top: 6px solid rgb(255, 2, 57);
+    border-radius: 100%;
+    margin: auto;
+    visibility: hidden;
+    display: none;
+    animation: spin 1s infinite linear;
+}
+.loading.display{
+    display: block;
+    visibility: visible;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.content{
+    width: 100%;
+    background-color: #393B45;
+    color: white;
+    height: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    letter-spacing: 1.7px;
+    visibility: hidden;
+   
+ 
+}
+.content.display{
+    visibility: visible;
+}
+.temperature{
+    /* color: #393B45; */
+    color: white;
+    letter-spacing: 3px;
+    font-size: 35px;
+}
+
+.overview{
+    border-radius: 2px;
+    border-end-end-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin: 5px;
+    height: auto;
+    background-color: rgba(182, 243, 147, 0.287);
+   
+}
+#alert{
+    display: none;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid rgb(178, 35, 35);
+    color: red;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+.note{
+    background-color: rgb(230, 230, 230);
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(17, 0, 255);;
+    margin-bottom: 2px;
+    margin-bottom: 2px;
+    width: 100%;
+    padding: 0 10%;
+}

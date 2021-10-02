@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box_card">
+        <div class="header">
+            <h1 class="text-center">Weather App</h1>
+        </div>
+        <div class="search_box ">
+
+
+            <input type="text" class="form-control shadow-none" id="search_text" placeholder="Search City/Location">
+            <button id="search_btn" class="btn btn-primary shadow-none">Search</button>
+
+
+        </div>
+        <div class="alert empty_err" id="alert">
+
+        </div>
+        <div class="loading">
+
+        </div>
+        <div class="content">
+
+
+            <div class="weather text-center">
+
+                <div class="overview my-2">
+                    <span class="icon d-inline align-middle">---</span>
+                    <div class="temperature d-inline align-middle">-°C</div>
+
+
+                </div>
+
+                <div class="summery">---</div>
+
+                <div class="location">----</div>
+                <div class="cordinates">
+                    ----
+                </div>
+                <hr>
+
+                <div class="details_report text-left">
+                    <div class="weather_detail_report">
+                        <div class="pressure">
+
+                        </div>
+                        <div class="humidity">
+
+                        </div>
+                        <div class="temp_min">
+
+                        </div>
+                        <div class="temp_max">
+
+                        </div>
+
+                        <div class="windReport">
+
+                            <div class="wind_speed">
+
+                            </div>
+                            <div class="wind_deg">
+
+                            </div>
+                        </div>
+
+                        <div class="sunrise_sunset_block">
+                            <div class="sunrise">
+
+                            </div>
+
+                            <div class="sunset">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="note">
+                NOTE:
+                <p>Sunrise and sunset time are according to your local time</p>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
