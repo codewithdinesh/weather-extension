@@ -1,5 +1,4 @@
 
-import keys from './key.json'
 
 let longPosition;
 
